@@ -9,3 +9,8 @@ body {
     max-width: 960px;
     width: 100%;
 }
+
+.story_images {
+    width: 150px;
+    padding: 20px;
+}
