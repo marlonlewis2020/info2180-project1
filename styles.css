@@ -18,6 +18,13 @@ body {
     color: black;
 }
 
+.message {
+    padding-left: 220px;
+    width: 350px;
+    font-weight: bold;
+    color: var(--blue);
+}
+
 .container {
     margin: 0 auto;
     max-width: 960px;
@@ -156,14 +163,15 @@ div.testing-desciption {
 }
 
 .stories h2 {
-    padding-left:80px;
+    padding-left:36px;
 }
 
 .stories img {
     border-radius: 100%;
     width: 15vw;
-    height: 35vh;
+    height: 30vh;
     padding: 33px;
+    padding-left: 0px;
     float: left;
 }
 
@@ -173,7 +181,6 @@ div.testing-desciption {
     padding-top: 20px;
     padding-bottom: 50px;
     padding-left: 80px;
-    gap: 0px;
 }
 
 .newsletter .btn {
