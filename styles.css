@@ -193,6 +193,7 @@ div.testing-desciption {
     border-style: line;
     border-radius: 5px;
     border-width: 1px;
+    color: white;
 }
 
 .newsletter .container h3,form {
