@@ -14,6 +14,9 @@ window.onload = function(){
         else {
             msg.textContent = "Please enter a valid email address.";
         }
+        document.getElementById("email").value="";
+        document.getElementById("email").placeholder="Enter your email";
+
     })
 
 }
