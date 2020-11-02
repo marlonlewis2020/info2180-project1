@@ -175,12 +175,12 @@ div.testing-desciption {
     float: left;
 }
 
-.newsletter .container {
+.newsletter  {
     background-color: var(--green);
     color: white;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     padding-bottom: 50px;
-    padding-left: 80px;
+    /* padding-left: 80px; */
 }
 
 .newsletter .btn {
@@ -216,7 +216,7 @@ input {
     width: 200px;
 }
 
-footer .container {
+footer  {
     color: white;
     background-color: var(--gray);
     padding-left: 80px;
