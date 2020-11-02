@@ -22,7 +22,7 @@ body {
     padding-left: 220px;
     width: 350px;
     font-weight: bold;
-    color: var(--blue);
+    color: blue;
 }
 
 .container {
