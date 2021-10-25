@@ -1,11 +1,226 @@
 /* Add your CSS to this file */
+:root{
+    --green: #48BB78;
+    --corners: 5px;
+    --t-size: 18px;
+    --blue: #5A67D8;
+    --gray: #4A5568;
+    --white:  #E2E8F0;
+    --nav-color: #6b7280;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--t-size);
+    color: black;
+}
+
+.message {
+    padding-left: 220px;
+    width: 350px;
+    font-weight: bold;
+    color: blue;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+header .container {
+    display: flex;
+    padding-left: 80px;
+    background-color: white;
+    font-size: var(--t-size);
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: var(--t-size);
+}
+
+section.overview-hero .container {
+    background-color: lightgray;
+    padding: 50px;
+    padding-left: 80px;
+    align-content: center;
+    /* padding-bottom: 20px; */
+}
+
+.overview-hero-image img{
+    float:left;
+    width: 15vw;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 20px;
+    background-color: none;
+    mix-blend-mode: multiply;
+}
+
+.overview-hero-text {
+    width: 65vw;
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: right;
+    padding: 8px;
+}
+
+header a:any-link {
+    color: var(--nav-color);
+    text-decoration-line: none;
+}
+
+header a:hover {
+    color: var(--blue);
+}
+
+section.learn-about img {
+    width: 230px;
+    justify-content: center;
+}
+
+section.learn-about h2 {
+    font-size: 24px;
+    color: var(--green);
+    margin-left: 65px;
+}
+
+section.learn-about h3 {
+    font-size: 21px;
+    color: var(--green);
+}
+
+section.learn-about .cards {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 500px;
+    justify-items: center;
+    justify-content: center;
+}
+
+section.learn-about .card {
+    display: grid;
+    grid-template-rows: 180px 250px;
+    border-color: var(--white);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: var(--corners);
+    box-shadow: 1px 2px var(--green);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cards h3 {
+    color: var(--green);
+    font-size: 21px;
+}
+
+.testing .container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: var(--gray);
+    COLOR: WHITE;
+    padding-left: 80px;
+    align-items: center;
+    justify-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div.testing-desciption {
+    padding-right: 30px;
+    text-justify: center;
+}
+
+.testing div .btn {
+    background-color: var(--green);
+    border-radius: var(--corners);
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration-line: none;
+}
+
+.stories {
+    padding-left: 300px;
+    width: 700px;
+}
+
+.stories h2,a {
+    color: var(--blue);
+    font-size: var(--t-size);
+}
+
+.stories h2 {
+    padding-left:36px;
+}
+
+.stories img {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    margin: 33px;
+    padding-left: 0px;
+    float: left;
+}
+
+.newsletter  {
+    background-color: var(--green);
+    color: white;
+    /* padding-top: 20px; */
+    padding-bottom: 50px;
+    /* padding-left: 80px; */
+}
+
+.newsletter .btn {
+    background-color: var(--blue);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+    border-style: line;
+    border-radius: 5px;
+    border-width: 1px;
+    color: white;
+}
+
+.newsletter .container h3,form {
+    padding-left: 200px;
+    padding-right: 250px;
+}
+
+.newsletter p {
+    padding-left: 200px;
+    padding-right: 250px;
+}
+
+.newsletter .container form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+input {
+    width: 200px;
+}
+
+footer  {
+    color: white;
+    background-color: var(--gray);
+    padding-left: 80px;
 }
