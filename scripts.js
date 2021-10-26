@@ -8,9 +8,9 @@ window.onload = function(){
         msg.textContent = "";
         let email = String(document.getElementById("email").value);
 
-        let lent = email.length-1;
+        let elen = email.length-1;
         let ends = [".com", ".org", ".net", ".biz", ".co"]
-        if (lent > 5 && /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email) && (ends.includes(email.substring(lent - 3)))){
+        if (elen > 5 && /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email) && (ends.includes(email.substring(lent - 3)))){
             msg.textContent = "Thank You! Your email address " 
             + email + " has been added to our mailing list!";
         }
