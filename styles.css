@@ -19,10 +19,11 @@ body {
 }
 
 .message {
-    padding-left: 220px;
-    width: 350px;
+    padding-left: 150px;
+    width: 600px;
     font-weight: bold;
     color: blue;
+    text-align: center;
 }
 
 .container {
